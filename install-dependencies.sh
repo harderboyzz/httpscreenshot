@@ -6,7 +6,7 @@
 # Error out if one fails
 set -e
 
-apt-get install -y swig swig3.0 libssl-dev python-dev libjpeg-dev xvfb
+apt install -y swig swig4.0 libssl-dev python-dev libjpeg-dev xvfb
 
 # Newer version in PyPI
 #apt-get install -y python-requests
@@ -18,8 +18,8 @@ apt-get install -y swig swig3.0 libssl-dev python-dev libjpeg-dev xvfb
 #apt-get install -y python-pil
 
 # Install pip and install pytnon requirements through it
-apt-get install -y python-pip
-pip install -r requirements.txt
+apt install -y python3-pip
+pip3 install -r requirements.txt
 
 # This binary is distributed with the code base, version is
 # more recent then the one in the ubuntu repo (1.9.1 vs 1.9.0)
